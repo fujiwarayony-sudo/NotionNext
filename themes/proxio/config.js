@@ -3,17 +3,17 @@
  */
 const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: true, //是否显示页面进入的欢迎文字
-  PROXIO_WELCOME_TEXT: '欢迎来到此网站，点击任意位置进入', // 欢迎文字，留空则不启用
+  PROXIO_WELCOME_TEXT: '有朋自远方来，不亦乐乎', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
-  PROXIO_HERO_TITLE_1: '开源且免费的基于 Notion 笔记的网站构建工具', // 英雄区文字
-  PROXIO_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
+  PROXIO_HERO_TITLE_1: '重塑品牌叙事', // 英雄区文字
+  PROXIO_HERO_TITLE_2: '我是Jaa，一名专注品牌视觉的设计师', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  PROXIO_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
+  PROXIO_HERO_BUTTON_1_TEXT: '', // 英雄区按钮
   PROXIO_HERO_BUTTON_1_URL:
     'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_TEXT: '', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_ICON: '/images/starter/github-mark.svg', // 英雄区按钮2的图标，不需要则留空
 
@@ -25,7 +25,7 @@ const CONFIG = {
   PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
   PROXIO_BLOG_TITLE: '作品',
   PROXIO_BLOG_COUNT: 4, // 首页博文区块展示前4篇文章
-  PROXIO_BLOG_TEXT_1: '我的最新动态',
+  PROXIO_BLOG_TEXT_1: '最新动态',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: '', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
@@ -33,10 +33,10 @@ const CONFIG = {
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_3: '',
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: '',
 
-  PROXIO_ANNOUNCEMENT_ENABLE: true, //公告文字区块
+  PROXIO_ANNOUNCEMENT_ENABLE: false, //公告文字区块
 
   // 特性区块
-  PROXIO_FEATURE_ENABLE: true, // 特性区块开关
+  PROXIO_FEATURE_ENABLE: false, // 特性区块开关
   PROXIO_FEATURE_TITLE: '为什么选我',
   PROXIO_FEATURE_TEXT_1: '我能让您的项目焕发光彩',
   PROXIO_FEATURE_TEXT_2: '丰富的案例经验，专业的技术服务，优质的沟通效率',
@@ -87,7 +87,7 @@ const CONFIG = {
   ],
 
   // 首页用户测评区块
-  PROXIO_TESTIMONIALS_ENABLE: true, // 测评区块开关
+  PROXIO_TESTIMONIALS_ENABLE: false, // 测评区块开关
   PROXIO_TESTIMONIALS_TITLE: '用户反馈',
   PROXIO_TESTIMONIALS_TEXT_1: '我们的用户怎么说',
   PROXIO_TESTIMONIALS_TEXT_2:
@@ -152,7 +152,7 @@ const CONFIG = {
   ],
 
   //   FAQ 常见问题模块
-  PROXIO_FAQ_ENABLE: true, // 常见问题模块开关
+  PROXIO_FAQ_ENABLE: false, // 常见问题模块开关
   PROXIO_FAQ_TITLE: '常见问题解答',
   PROXIO_FAQ_TEXT_1: '有任何问题吗？请看这里',
   PROXIO_FAQ_TEXT_2: '我们收集了常见的用户疑问',
@@ -177,69 +177,71 @@ const CONFIG = {
 
   // 关于作者区块
   PROXIO_ABOUT_ENABLE: true, // 关于作者区块区块开关
-  PROXIO_ABOUT_TITLE: '关于作者',
+  PROXIO_ABOUT_TITLE: '关于我',
   PROXIO_ABOUT_TEXT_1: 'I am an Architect Turned Into a Product Designer',
   PROXIO_ABOUT_TEXT_2:
     'With a background in architecture, I now apply my expertise to product design, blending aesthetics, functionality, and innovation. My goal is to create modern, user-focused designs that bring your vision to life.',
   PROXIO_ABOUT_PHOTO_URL: '/avatar.png',
   PROXIO_ABOUT_KEY_1: '经验年限',
-  PROXIO_ABOUT_VAL_1: '10年+',
-  PROXIO_ABOUT_KEY_2: '客户',
-  PROXIO_ABOUT_VAL_2: '1000+',
+  PROXIO_ABOUT_VAL_1: '15年+',
+  PROXIO_ABOUT_KEY_2: '服务品牌',
+  PROXIO_ABOUT_VAL_2: '60+',
   PROXIO_ABOUT_KEY_3: '交付项目',
-  PROXIO_ABOUT_VAL_3: '5000+',
-  PROXIO_ABOUT_KEY_4: '累积创作时长（小时）',
-  PROXIO_ABOUT_VAL_4: '10000+',
+  PROXIO_ABOUT_VAL_3: '500+',
+  PROXIO_ABOUT_KEY_4: '服务合同额',
+  PROXIO_ABOUT_VAL_4: '100000000元+',
 
-  PROXIO_ABOUT_BUTTON_URL: '/about',
-  PROXIO_ABOUT_BUTTON_TEXT: '关于我',
+  PROXIO_ABOUT_BUTTON_URL: ' ',// 填入/about 英文，链接到about页面
+  PROXIO_ABOUT_BUTTON_TEXT: ' ',// 填入关于我
 
   // 横向滚动文字
   PROXIO_BRANDS_ENABLE: true, // 滚动文字
   PROXIO_BRANDS: [
-    'Web Design',
-    'Logo Design',
-    'Mobile App Design',
-    'Product Design'
+    'Commercial Photography 商业摄影',
+    'Web Design 电商设计',
+    'Brand Design 品牌设计',
+    'Mobile App Design 应用设计',
+    'Package Design 包装设计',
+    'Product Design 产品设计'
   ],
 
-  PROXIO_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
+  PROXIO_FOOTER_SLOGAN: '',// 填入slogan
 
   // 页脚三列菜单组
   // 页脚菜单
   PROXIO_FOOTER_LINKS: [
     {
-      name: '友情链接',
+      name: ' ',// 填入标题
       menus: [
         {
-          title: 'Tangly的学习笔记',
-          href: 'https://blog.tangly1024.com'
+          title: ' ',// 填入标题
+          href: ' '// 填入链接
         },
         {
-          title: 'NotionNext',
-          href: 'https://www.tangly1024.com'
+          title: ' ',// 填入标题
+          href: ' '// 填入链接
         }
       ]
     },
     {
-      name: '开发者',
+      name: ' ',// 填入标题
       menus: [
-        { title: 'Github', href: 'https://github.com/tangly1024/NotionNext' },
+        { title: ' ', href: 'https://' },// 填入标题和链接
         {
-          title: '开发帮助',
-          href: 'https://docs.tangly1024.com/article/how-to-develop-with-notion-next'
+          title: ' ',
+          href: 'https://'// 填入标题和链接
         },
         {
-          title: '功能反馈',
-          href: 'https://github.com/tangly1024/NotionNext/issues/new/choose'
+          title: ' ',
+          href: 'https://'// 填入标题和链接
         },
         {
-          title: '技术讨论',
-          href: 'https://github.com/tangly1024/NotionNext/discussions'
+          title: ' ',
+          href: 'https://'// 填入标题和链接
         },
         {
-          title: '关于作者',
-          href: 'https://blog.tangly1024.com/about'
+          title: ' ',
+          href: 'https://'// 填入标题和链接
         }
       ]
     }
@@ -263,16 +265,16 @@ const CONFIG = {
 
   // 页面底部的行动呼吁模块
   PROXIO_CTA_ENABLE: true,
-  PROXIO_CTA_TITLE: '与我建立联系',
-  PROXIO_CTA_TITLE_2: '让我们立刻启动您的项目',
+  PROXIO_CTA_TITLE: 'Contact me',
+  PROXIO_CTA_TITLE_2: '欢迎与我立刻建立联系',
   PROXIO_CTA_DESCRIPTION:
-    '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
+    '',
   PROXIO_CTA_BUTTON: true, // 是否显示按钮
-  PROXIO_CTA_BUTTON_URL: '/about',
-  PROXIO_CTA_BUTTON_TEXT: '联系我',
+  PROXIO_CTA_BUTTON_URL: '',// 填入/about 跳转到about页面
+  PROXIO_CTA_BUTTON_TEXT: 'Jaaaaa@qq.com',
 
   PROXIO_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
-  PROXIO_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
+  PROXIO_POST_REDIRECT_URL: 'https:/jaaa.me', // 重定向域名
   PROXIO_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_PROXIO_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
 }
 export default CONFIG
